@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:root{
+    --green-principal: #00704A;
+    --black-principal: #27251F;
+}
+
+nav{
+    /* POSITIONS */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* BOXING */
+    padding: 0 6.875rem;
+
+    /* DESIGN */
+    background: rgb(226, 226, 226);
+}
+    nav .logo-content img{
+        width: 4.6875rem;
+        padding: 0.3125rem;
+    }
+
+    nav .link-content{
+        /* POSITION */
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    nav .link-content a{
+        /* BOXING */
+        margin: 0 0.9375rem;
+
+        /* DESIGN */
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--green-principal);
+        font-size: 1.0625rem;
+    }
+
+
+/* SLIDE CONTENT */
+
+.slide-content{
+    /* POSITIONS */
+
+    /* BOXING */
+    width: 100%;
+    height: 25rem;
+    margin: 5rem 0;
+
+    /* DESIGN */
+    background: #000;
+}
+
+
+/* CATEGORY CONTENT */
+
+.category-content{
+    /* POSITIONS */
+    display: flex;
+    flex-direction: row;
+    /* background: rgb(150, 149, 149); */
+
+    /* BOXING */
+    width: 100%;
+    margin: 5rem 0;
+    padding: 0 7.5rem;
+}
+    .category-content .category{
+        /* POSITIONS */
+        text-align: center;
+
+        /* BOXING */
+        width: 33.3%;
+
+        /* DESIGN */
+        text-decoration: none;
+    }
+        .category-content .category img{
+            /* BOXING */
+            width: 10.25rem;
+            height: 10.25rem;
+            border-radius: 100%;
+        }
+        
+        .category-content .category .category-p{
+            /* BOXING */
+            margin: 0.9375rem 0 0 0;
+
+            /* DESIGN */
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            color: var(--black-principal);
+
+
+        }
+
+/* WISHFOOD CONTENT */
+
+.wishfood-content{
+
+    /* BOXING */
+    width: 90%;
+    margin: 0 auto;
+}   
+    .wishfood-content h1{
+        /* POSITIONS */
+        text-align: center;
+
+        /* BOXING */
+        margin: 0 0 1.5625rem 0;
+
+        /* DESIGN */
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--green-principal);
+        border-bottom: 5px solid var(--green-principal);
+    }
+
+    .sub-content-wishfood{
+        /* POSITIONS */
+        display: flex;
+        flex-direction: row;
+
+        /* BOXING */
+        width: 100%;
+
+        /* DESIGN */
+        /* background: rgb(8, 196, 1); */
+    }
+        .wishfood-content .food{
+            /* POSITIONS */
+            position: relative;
+            /* BOXING */
+            width: 100%;
+            margin: 0 1.25rem;
+        }
+            .wishfood-content .food .img-food-temp{
+                /* BOXING */
+                width: 100%;
+                height: 31.25rem;
+
+                 /* DESIGN */
+                background: var(--green-principal);
+
+            }
+
+            .wishfood-content .food-btn{
+                /* POSITIONS */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+
+                /* BOXING */
+                width: 0%;
+                height: 100%;
+
+                /* DESING */
+                color: var(--black-principal);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.5625rem;
+                background: rgba(56,53,53,0.568);
+                opacity: 0;
+            }
+
+            .food:hover .food-btn{
+                width: 100%;
+                opacity: 100;
+                transition: all 1.5s;
+                border-radius: 0.625rem;
+            }
+
+            
+
+
+/* LOCATION CONTENT */
+
+.location-content{
+    /* POSITIONS */
+    display: flex;
+    flex-direction: row;
+}
