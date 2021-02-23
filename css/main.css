@@ -60,6 +60,12 @@ nav{
     /* DESIGN */
     background: #000;
 }
+    .slide-content img{
+        /* positions */
+        /* BOXING */
+        width: 100%;
+        height: inherit;
+    }
 
 
 /* CATEGORY CONTENT */
@@ -78,15 +84,16 @@ nav{
     .category-content .category{
         /* POSITIONS */
         text-align: center;
-
+        
+        
         /* BOXING */
         width: 33.3%;
-
+        
         /* DESIGN */
         text-decoration: none;
     }
-        .category-content .category img{
-            /* BOXING */
+    .category-content .category img{
+        /* BOXING */
             width: 10.25rem;
             height: 10.25rem;
             border-radius: 100%;
@@ -101,8 +108,9 @@ nav{
             font-weight: 700;
             color: var(--black-principal);
 
-
         }
+
+
 
 /* WISHFOOD CONTENT */
 
@@ -183,10 +191,56 @@ nav{
             
 
 
-/* LOCATION CONTENT */
+/* VALOR CONTENT */
 
-.location-content{
+.valor-content{
     /* POSITIONS */
     display: flex;
     flex-direction: row;
+
+    /* BOXING */
+    width: 80%;
+    margin: 6.25rem auto;
+
+    /* DESIGN */
+    border-top: solid 0.3125rem var(--green-principal);
 }
+    .valor{
+        /* BOXING */
+        padding: 0.625rem 1.5625rem  0rem;
+    }
+
+    .valor-content .valor-icon{
+        /* BOXING */
+        text-align: center;
+    }
+        .valor-content .valor-icon img{
+            /* BOXING */
+            width: 4.6875rem;
+        }
+    .valor-content .valor-title{
+        /* BOXING */
+        margin: 0.625rem 0;
+        text-align: center;
+
+        /* DESIGN */
+        font-size: 1.5625rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--black-principal);
+    }
+
+    .valor-content .valor-paragraph{
+        /* BOXING */
+        text-align: center;
+        margin: 0 0 0.3125rem 0;
+
+        /* DESIGN */
+        color: var(--green-principal);
+        font-size: 1.0625rem;
+    }
+
+    .valor-content .valor:hover{
+        border-bottom: solid 0.1875rem var(--green-principal);
+        animation-direction: reverse;
+        transition: all .1s;
+    }
