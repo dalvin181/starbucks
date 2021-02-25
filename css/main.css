@@ -11,27 +11,46 @@
     --black-principal: #27251F;
 }
 
+main{
+    /* position: relative; */
+}
+
 nav{
     /* POSITIONS */
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+    flex-direction: column;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    
     /* BOXING */
-    padding: 0 6.875rem;
+    width: 100%;
+    margin-bottom: 50%;
+    padding: 1.25rem 0;
 
     /* DESIGN */
     background: rgb(226, 226, 226);
 }
-    nav .logo-content img{
-        width: 4.6875rem;
-        padding: 0.3125rem;
-    }
-
-    nav .link-content{
-        /* POSITION */
+    nav .logo-content{
         display: flex;
-        align-items: center;
+        justify-content: center;
+        padding: 0 0 0.625rem 0;
+    }
+        nav .logo-content img{
+            width: 4.6875rem;
+            padding: 0.3125rem;
+            
+        }
+
+        nav .link-content{
+            /* POSITION */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            /* BOXING */
+            height: 10px;
         
     }
     
@@ -42,9 +61,13 @@ nav{
         /* DESIGN */
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
-        color: var(--green-principal);
         font-size: 1.0625rem;
+        font-weight: 700;
+        color: var(--green-principal);
     }
+        nav .link-content a:hover{
+            border-bottom: solid 3px var(--black-principal);
+        }
 
 
 /* SLIDE CONTENT */
@@ -55,10 +78,10 @@ nav{
     /* BOXING */
     width: 100%;
     height: 25rem;
-    margin: 5rem 0;
+    margin: 12% 0 5rem 0;
 
     /* DESIGN */
-    background: #000;
+    /* background: #000; */
 }
     .slide-content img{
         /* positions */
@@ -85,7 +108,6 @@ nav{
         /* POSITIONS */
         text-align: center;
         
-        
         /* BOXING */
         width: 33.3%;
         
@@ -108,6 +130,10 @@ nav{
             font-weight: 700;
             color: var(--black-principal);
 
+        }
+        .category-content .category:hover{
+
+            padding: 10px;
         }
 
 
